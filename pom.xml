@@ -10,7 +10,7 @@
 	
 	<groupId>com.example</groupId>
 	<artifactId>DevOps-Arena</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<packaging>war</packaging>
 	<name>DevOps-Arena</name>
 	<description>A DevOps Arena Project</description>
@@ -36,7 +36,7 @@
 		<connection>scm:git:git@github.com:lawaladekunle/devops_arena.git</connection>
 		<developerConnection>scm:git:git@github.com:lawaladekunle/devops_arena.git</developerConnection>
 		<url>git@github.com:lawaladekunle/devops_arena.git</url>
-		<tag>HEAD</tag>
+		<tag>v0.0.2</tag>
 	</scm>
 	
 	<dependencies>
