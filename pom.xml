@@ -2,6 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -10,12 +11,14 @@
 	</parent>
 	
 	<groupId>com.example</groupId>
-	<artifactId>DevOps-Arena</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>DevOps-Arena-Staging</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>war</packaging>
+	
 	<name>DevOps-Arena</name>
 	<description>A DevOps Arena Project</description>
 
+	
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
