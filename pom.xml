@@ -12,7 +12,7 @@
 	
 	<groupId>com.example</groupId>
 	<artifactId>DevOps-Arena-Staging</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.2.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 	
 	<name>DevOps-Arena</name>
