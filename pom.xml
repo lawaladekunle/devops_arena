@@ -10,13 +10,8 @@
 	</parent>
 	
 	<groupId>com.example</groupId>
-<<<<<<< HEAD
 	<artifactId>DevOps-Arena-Staging</artifactId>
 	<version>1.2.0-SNAPSHOT</version>
-=======
-	<artifactId>DevOps-Arena</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
->>>>>>> 266ab3d9cad8f4b57d2317cadeae2644bf76ec0b
 	<packaging>war</packaging>
 	
 	<name>DevOps-Arena</name>
