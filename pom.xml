@@ -15,7 +15,7 @@
 	<packaging>war</packaging>
 	
 	<name>DevOps-Arena AIOps</name>
-	<description>A DevOps Arena Project. </description>	
+	<description>A DevOps Arena Project.</description>	
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
