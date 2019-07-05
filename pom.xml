@@ -15,7 +15,7 @@
 	<packaging>war</packaging>
 	
 	<name>DevOps-Arena AIOps</name>
-	<description>A DevOps Arena Project. </description>	
+	<description>A DevOps Arena Project.</description>	
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -24,7 +24,7 @@
  		<repository>
 	 		<id>release</id>
 	 		<name>releases</name>
-	 		<url>http://35.189.114.150:8081/artifactory/libs-release</url>
+	 		<url>http://35.189.114.150:8081/artifactory/libs-release-local</url>
  		</repository>
  		<snapshotRepository>
 	 		<id>snapshot</id>
