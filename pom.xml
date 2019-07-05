@@ -11,13 +11,11 @@
 	
 	<groupId>com.example</groupId>
 	<artifactId>DevOps-Arena-Staging</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.3.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 	
-	<name>DevOps-Arena</name>
-	<description>A DevOps Arena Project</description>
-
-	
+	<name>DevOps-Arena AIOps</name>
+	<description>A DevOps Arena Project. </description>	
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -39,7 +37,7 @@
 		<connection>scm:git:git@github.com:lawaladekunle/devops_arena.git</connection>
 		<developerConnection>scm:git:git@github.com:lawaladekunle/devops_arena.git</developerConnection>
 		<url>git@github.com:lawaladekunle/devops_arena.git</url>
-		<tag>HEAD</tag>
+		<tag>v1.3.0</tag>
 	</scm>
 	
 	<dependencies>
