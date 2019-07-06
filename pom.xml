@@ -18,7 +18,7 @@
 	<description>A DevOps Arena Project.</description>	
 	<properties>
 		<java.version>1.8</java.version>
-		<surefire.version>2.22.2</surefire.version>
+		<surefire.version>2.17</surefire.version>
 		<jacoco.version>0.7.9</jacoco.version>
 	</properties>
 
