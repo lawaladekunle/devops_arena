@@ -11,7 +11,7 @@
 	
 	<groupId>com.example</groupId>
 	<artifactId>DevOps-Arena</artifactId>
-	<version>1.5.0-SNAPSHOT</version>
+	<version>1.5.0</version>
 	<packaging>war</packaging>
 	
 	<name>DevOps-Arena AIOps</name>
@@ -39,7 +39,7 @@
 		<connection>scm:git:git@github.com:lawaladekunle/devops_arena.git</connection>
 		<developerConnection>scm:git:git@github.com:lawaladekunle/devops_arena.git</developerConnection>
 		<url>git@github.com:lawaladekunle/devops_arena.git</url>
-		<tag>v1.3.0</tag>
+		<tag>v1.5.0</tag>
 	</scm>
 	
 	<dependencies>
