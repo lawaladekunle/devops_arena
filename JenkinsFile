@@ -3,6 +3,7 @@ node {
    stage('Prepare') {
       git url: 'https://github.com/lawaladekunle/devops_arena.git', branch: 'release/sonar_cube_integration_v1.5.0'
 //      mvnHome = tool 'maven'
+   sh 'source /var/lib/jenkins/.profile'
    }
    stage('Build') {
       if (isUnix()) {
