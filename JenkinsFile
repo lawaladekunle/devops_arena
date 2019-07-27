@@ -25,9 +25,9 @@ withMaven(jdk: 'JAVA', maven: 'MAVEN') {
    }
    stage('Sonar') {
       if (isUnix()) {
-         sh "mvn sonar:sonar -Dsonar.projectKey=Devops_Arena -Dsonar.host.url=http://35.197.235.99:9000 -Dsonar.login=26ba5ded26a5085387afee9e900360e29b5949d5"
+         sh "mvn sonar:sonar -Dsonar.projectKey=Devops_Arena -Dsonar.host.url=http://codeqadm:9000 -Dsonar.login=26ba5ded26a5085387afee9e900360e29b5949d5"
       } else {
-         bat(/"${mvnHome}\bin\mvn" sonar:sonar -Dsonar.projectKey=Devops_Arena -Dsonar.host.url=http://35.197.235.99:9000 -Dsonar.login=26ba5ded26a5085387afee9e900360e29b5949d5/)
+         bat(/"${mvnHome}\bin\mvn" sonar:sonar -Dsonar.projectKey=Devops_Arena -Dsonar.host.url=http://codeqadm:9000 -Dsonar.login=26ba5ded26a5085387afee9e900360e29b5949d5/)
       }
    } 
    stage('Deploy') {
