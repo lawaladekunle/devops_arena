@@ -1,13 +1,16 @@
-withMaven(jdk: 'JAVA', maven: 'MAVEN') {
-
 node {
-   def mvnHome
-   mvnHome = ${MAVEN}
-   JAVA_HOME = ${JAVA} 
    stage('Prepare') {
       git url: 'https://github.com/lawaladekunle/devops_arena.git', branch: 'release/sonar_cube_integration_v1.5.0'
    }
    
+
+   withMaven(jdk: 'JAVA', maven: 'MAVEN') {
+
+   def mvnHome
+   mvnHome = ${MAVEN}
+   JAVA_HOME = ${JAVA} 
+
+   }
    stage('Build') {
       if (isUnix()) {
          sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
@@ -40,4 +43,3 @@ node {
        sh "curl --retry-delay 10 --retry 5 http://35.189.114.150:9599/DevOps-Arena"
    }
 }
-} 
