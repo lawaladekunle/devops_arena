@@ -1,16 +1,12 @@
 node {
-   def mvnHome = "/var/lib/jenkins/maven";
-  }
-
-   environment {
-	JAVA_HOME="/var/lib/jenkins/jdk";
-
-   }
+   def mvnHome
    stage('Prepare') {
       git url: 'https://github.com/lawaladekunle/devops_arena.git', branch: 'release/sonar_cube_integration_v1.5.0'
-//      mvnHome = tool 'maven'
-//   sh 'source /var/lib/jenkins/.profile'
+      mvnHome = tool 'maven'
+      JAVA_HOME = tool 'JDK'
    }
+   
+
    stage('Build') {
       if (isUnix()) {
          sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
@@ -29,13 +25,13 @@ node {
         bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean verify/)
      }
    }
-/*   stage('Sonar') {
+   stage('Sonar') {
       if (isUnix()) {
-         sh "'${mvnHome}/bin/mvn' sonar:sonar -Dsonar.projectKey=Devops_Arena -Dsonar.host.url='http://35.197.235.99:9000' -Dsonar.login=26ba5ded26a5085387afee9e900360e29b5949d5"
+         sh "'${mvnHome}/bin/mvn' sonar:sonar -Dsonar.projectKey=Devops_Arena -Dsonar.host.url=http://35.197.235.99:9000 -Dsonar.login=26ba5ded26a5085387afee9e900360e29b5949d5"
       } else {
-         bat(/"${mvnHome}\bin\mvn" sonar:sonar -Dsonar.projectKey=Devops_Arena -Dsonar.host.url='http://35.197.235.99:9000' -Dsonar.login=26ba5ded26a5085387afee9e900360e29b5949d5/)
+         bat(/"${mvnHome}\bin\mvn" sonar:sonar -Dsonar.projectKey=Devops_Arena -Dsonar.host.url=http://35.197.235.99:9000 -Dsonar.login=26ba5ded26a5085387afee9e900360e29b5949d5/)
       }
-   } */
+   }
    stage('Deploy') {
        sh 'curl -u jenkins:Blizzard42 -T target/**.war "http://35.189.114.150:9999/manager/text/deploy?path=/devops-arena&update=true"'
    }
@@ -43,3 +39,4 @@ node {
        sh "curl --retry-delay 10 --retry 5 http://35.189.114.150:9599/DevOps-Arena"
    }
 }
+ 
