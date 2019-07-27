@@ -1,5 +1,6 @@
 node {
    def mvnHome = "/var/lib/jenkins/maven";
+  }
 
    environment {
 	JAVA_HOME="/var/lib/jenkins/jdk";
