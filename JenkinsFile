@@ -1,5 +1,10 @@
 node {
    def mvnHome = "/var/lib/jenkins/maven";
+
+   environment {
+	JAVA_HOME="/var/lib/jenkins/jdk";
+
+   }
    stage('Prepare') {
       git url: 'https://github.com/lawaladekunle/devops_arena.git', branch: 'release/sonar_cube_integration_v1.5.0'
 //      mvnHome = tool 'maven'
