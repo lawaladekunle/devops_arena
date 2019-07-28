@@ -34,7 +34,7 @@ withMaven(jdk: 'JAVA', maven: 'MAVEN') {
        sh 'curl -u jenkins:Blizzard42 -T target/**.war "35.189.114.150:9999/manager/text/deploy?path=/devops-arena&update=true"'
    }
    stage("Smoke Test"){
-       sh "curl --retry-delay 10 --retry 5 35.189.114.150:9599/DevOps-Arena"
+       sh "curl --retry-delay 10 --retry 5 35.189.114.150:9999/DevOps-Arena"
    }
 }
 }
