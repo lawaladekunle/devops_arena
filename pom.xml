@@ -11,15 +11,19 @@
 	
 	<groupId>com.example</groupId>
 	<artifactId>DevOps-Arena</artifactId>
+<<<<<<< HEAD
 	<version>1.6.0-SNAPSHOT</version>
+=======
+	<version>1.5.2-SNAPSHOT</version>
+>>>>>>> sonar_cube_integration_v1.5.0
 	<packaging>war</packaging>
 	
 	<name>DevOps-Arena AIOps</name>
 	<description>A DevOps Arena Project.</description>	
 	<properties>
 		<java.version>1.8</java.version>
-		<surefire.version>2.22.2</surefire.version>
-		<jacoco.version>0.7.9</jacoco.version>
+		<surefire.version>2.22.0</surefire.version>
+		<jacoco.version>0.8.4</jacoco.version>
 	</properties>
 
 	<distributionManagement>
